@@ -11,5 +11,13 @@ import { ProfileComponent } from './profile/profile.component';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'hello world';
+  handleClickEvent() {
+    alert('function called');
+
+    this.otherFunction();
+  }
+
+  otherFunction() {
+    console.log('hiiiiiii');
+  }
 }
